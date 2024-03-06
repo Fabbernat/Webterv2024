@@ -12,7 +12,7 @@ include_once "includes/navbar.inc.php";
 
 <body>
     <header>
-        <h1>W3schools main page</h1>
+        <h1>Welcome to TryHard33</h1>
     </header>
 
     <nav>
@@ -20,16 +20,16 @@ include_once "includes/navbar.inc.php";
         <a href="css.php">CSS</a>
         <a href="javascript.php">JAVASCRIPT</a>
         <a href="php.php">PHP</a>
+        <a href="python.php">PYTHON</a>
         <!-- Add more navigation links as needed -->
     </nav>
 
     <section>
         <!-- Your main content goes here -->
-        <h2>Welcome to Your Website</h2>
-        <p>This is a simple example to get you started.</p>
+        <h2>Welcome to W3schools</h2>
+        <p>Choose a topic to learn.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
+    <?php include "includes/footer.inc.php";?>
+
 </body>

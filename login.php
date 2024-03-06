@@ -19,3 +19,5 @@ include 'includes/navbar.inc.php';
     </label for="submit">
     <button type="submit" name="submit">Login</button>
 </form>
+<?php include "includes/footer.inc.php";?>
+</body>

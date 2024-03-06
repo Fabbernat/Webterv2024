@@ -12,38 +12,40 @@ include 'includes/navbar.inc.php';
 <body>
 <div class="register">
     <form action="includes/register.inc.php" method="POST">
-        <h2 id="signup">Regisztráció</h2>
-        <label for="felhasznalonev">Felhasználónév:
-            <input type="text" name="felhasznalonev" id="felhasznalonev" placeholder="Felhasználónév" required>
+        <h2 id="signup">Registration</h2>
+        <label for="username">Username:
+            <input type="text" name="username" id="username" placeholder="Username" required>
         </label>
         <br>
-        <label for="email">E-mail cím:
-            <input type="email" name="email" id="email" placeholder="E-mail cím" required>
+        <label for="email">Email address:
+            <input type="email" name="email" id="email" placeholder="Email address" required>
         </label>
         <br>
 
-        <label for="vezeteknev">Keresztnév:
-            <input type="text" name="vezeteknev" id="vezeteknev" placeholder="Keresztnév" required>
+        <label for="firstname">First name:
+            <input type="text" name="firstname" id="firstname" placeholder="First name" required>
         </label>
         <br>
-        <label for="keresztnev">Felhasználónév:
-            <input type="text" name="keresztnev" id="keresztnev" placeholder="Felhasználónév" required>
+        <label for="lastname">Last name:
+            <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
         </label>
         <br>
-        <label for="jelszo">Jelszó:
-            <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó" required>
+        <label for="birthdate">Birth date:
+            <input type="date" name="birthdate" id="birthdate" placeholder="birthdate" required>
         </label>
         <br>
-        <label for="confirm_password">Jelszó megerősítése:
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="Jelszó megerősítése"
+        <label for="password">Password:
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </label>
+        <br>
+        <label for="confirm_password">Confirm Password:
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"
                    required>
         </label>
         <br>
-        <label for="radio">Admin vagyok
-            <input type="checkbox" name="radio" id="radio">
-        </label>
-        <br>
         <!-- Submit button for registration -->
-        <button type="submit">Regisztráció</button>
+        <button type="submit">Register</button>
     </form>
 </div>
+<?php include "includes/footer.inc.php";?>
+</body>
