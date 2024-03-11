@@ -12,12 +12,11 @@ h2 {
     font-size: large;
 }
 
-button {
-    width: max-content;
-    color: darkcyan;
-    background-color: aqua;
-    font-size: xxx-large;
-    border-radius: 20px;
+.button {
+    font-size: x-large;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
 }
 
 * {
@@ -97,9 +96,59 @@ footer {
     color: #ffcc00; /* Change the color to indicate the selected rating */
 }
 
+
+.signup-and-login-caption{}
+
+#reg {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 100px;
+    margin-right:100px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+#login {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 100px;
+    margin-right:100px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 90%; /* A szélesség beállítása */
+    padding: 12px 20px; /* A belső térköz beállítása */
+    margin: 8px 0; /* A külső térköz beállítása */
+    box-sizing: border-box; /* A szélesség a belső térközt és a keretet is magában foglalja */
+    border: 3px solid #ccc; /* A keret beállítása */
+    border-radius: 4px; /* A keret sugara */
+}
+
 .rate-us {
     font-size: 30px; /* Adjust the font size to match the star labels */
     text-align: right; /* Align the text to the right */
     color: #cc0; /* Change the color to make it stand out */
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.active {
+    font-size: 30px; /* Adjust the font size to match the star labels */
+    text-align: right; /* Align the text to the right */
+    background-color: gray;
+    color: #cc0;
     margin-right: 10px; /* Add some margin for spacing */
 }

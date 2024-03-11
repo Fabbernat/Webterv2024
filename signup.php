@@ -1,5 +1,5 @@
 <?php
-// File: register.php
+// File: signup.php
 include 'includes/navbar.inc.php';
 ?>
 <!DOCTYPE html>
@@ -10,42 +10,45 @@ include 'includes/navbar.inc.php';
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="register">
-    <form action="includes/register.inc.php" method="POST">
-        <h2 id="signup">Registration</h2>
-        <label for="username">Username:
+<main class="signup">
+        <h1 class="signup-and-login-caption">Sign up</h1>
+    <form action="includes/signup.inc.php" method="POST" id="reg">
+        <fieldset>
+        <legend> Registration form </legend>
+        <label for="username">Username
             <input type="text" name="username" id="username" placeholder="Username" required>
         </label>
         <br>
-        <label for="email">Email address:
+        <label for="email">Email address
             <input type="email" name="email" id="email" placeholder="Email address" required>
         </label>
         <br>
 
-        <label for="firstname">First name:
+        <label for="firstname">First name
             <input type="text" name="firstname" id="firstname" placeholder="First name" required>
         </label>
         <br>
-        <label for="lastname">Last name:
+        <label for="lastname">Last name
             <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
         </label>
         <br>
-        <label for="birthdate">Birth date:
+        <label for="birthdate">Birth date
             <input type="date" name="birthdate" id="birthdate" placeholder="birthdate" required>
         </label>
         <br>
-        <label for="password">Password:
+        <label for="password">Password
             <input type="password" name="password" id="password" placeholder="Password" required>
         </label>
         <br>
-        <label for="confirm_password">Confirm Password:
+        <label for="confirm_password">Confirm Password
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"
                    required>
         </label>
+        </fieldset>
         <br>
         <!-- Submit button for registration -->
-        <button type="submit">Register</button>
+        <button type="submit" class="button">Sign up</button>
     </form>
-</div>
+</main>
 <?php include "includes/footer.inc.php";?>
 </body>

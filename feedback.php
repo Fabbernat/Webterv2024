@@ -1,6 +1,3 @@
-<?php
-include_once "includes/navbar.inc.php";
-?>
 
 <!DOCTYPE html>
 <html lang="hu">
@@ -11,13 +8,17 @@ include_once "includes/navbar.inc.php";
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<?php
+include_once "includes/navbar.inc.php";
+?>
 <header>
     <h1>Feedback</h1>
 </header>
 
 <section>
     <!-- Your feedback form goes here -->
-    <form action="includes/submit_feedback.inc.php" method="POST">
+    <form action="includes/submit_feedback.inc.php" method="POST" id="reg">
+        <label for="rating">Rate Us (1-5):</label>
         <div class="star-rating">
             <input type="radio" id="rating1" name="rating" value="1" required>
             <label for="rating1">&#9733;</label>
@@ -31,13 +32,10 @@ include_once "includes/navbar.inc.php";
             <label for="rating5">&#9733;</label>
         </div>
         <br>
-        <label for="rating">Rate Us (1-5):</label>
-        <input type="number" name="rating" id="rating" min="1" max="5" required>
-        <br>
         <label for="comment">Comment:</label>
         <textarea name="comment" id="comment" rows="4" cols="50" placeholder="Write your feedback here..." required></textarea>
         <br>
-        <button type="submit">Submit Feedback</button>
+        <button type="submit" class="button">Submit Feedback</button>
     </form>
 </section>
 

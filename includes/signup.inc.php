@@ -2,7 +2,7 @@
 
 <?php
 
-header("Location: ../register.php?signup=not_yet_implemented");
+header("Location: ../signup.php?signup=not_yet_implemented");
 
 /* Ez a rész még nem kell, ha lesz benne adatbáziskezelés imlementálva majd akkor
 include_once "dbh.inc.php";

@@ -1,6 +1,3 @@
-<?php
-include_once "includes/navbar.inc.php";
-?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -11,6 +8,9 @@ include_once "includes/navbar.inc.php";
 </head>
 
 <body>
+<?php
+include_once "includes/navbar.inc.php";
+?>
     <header>
         <h1>Welcome to TryHard33</h1>
     </header>
