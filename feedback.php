@@ -17,7 +17,7 @@ include_once "includes/navbar.inc.php";
 
 <section>
     <!-- Your feedback form goes here -->
-    <form action="includes/submit_feedback.inc.php" method="POST" id="reg">
+    <form action="includes/submit_feedback.inc.php" method="POST" class="green-background-form">
         <label for="rating">Rate Us (1-5):</label>
         <div class="star-rating">
             <input type="radio" id="rating1" name="rating" value="1" required>

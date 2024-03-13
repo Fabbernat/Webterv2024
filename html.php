@@ -8,6 +8,7 @@
 <body>
 <?php
 include_once "includes/navbar.inc.php";?>
+<main>    
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:250px;'>
 
     <div class='w3-row w3-white'>
@@ -35,6 +36,11 @@ include_once "includes/navbar.inc.php";?>
                 <a class="w3-btn w3-margin-bottom"  href="#" style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study our free HTML Tutorial &raquo;</a><br>
             </div>
             <hr>
+        </div>
+    </div>
+</div>
+    <img src="img/img_chrome.png" alt="image of a website demonstrating h1 and p tags">
+</main>
 <?php include_once "includes/footer.inc.php"; ?>
 </body>
 </html>

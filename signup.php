@@ -11,8 +11,11 @@ include 'includes/navbar.inc.php';
 </head>
 <body>
 <main class="signup">
+    <header>
+
         <h1 class="signup-and-login-caption">Sign up</h1>
-    <form action="includes/signup.inc.php" method="POST" id="reg">
+    </header>
+    <form action="includes/signup.inc.php" method="POST" class="green-background-form">
         <fieldset>
         <legend> Registration form </legend>
         <label for="username">Username

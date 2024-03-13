@@ -11,8 +11,11 @@
 include 'includes/navbar.inc.php';
 ?>
 <main>
+    <header>
+
     <h1 class="signup-and-login-caption">Log in</h1>
-    <form action="includes/login.inc.php" method="post" id="login">
+    </header>
+    <form action="includes/login.inc.php" method="post" class="green-background-form">
         <fieldset>
             <legend> Log in credentials</legend>
             <label for="username"> Username
