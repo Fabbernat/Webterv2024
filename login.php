@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Fabian Transport</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,5 +27,5 @@ include 'includes/navbar.inc.php';
         <button type="submit" class="button">Log in</button>
     </form>
 </main>
-<?php include "includes/footer.inc.php"; ?>
+<?php include_once "includes/footer.inc.php"; ?>
 </body>

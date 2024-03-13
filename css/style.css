@@ -138,17 +138,18 @@ input {
     border-radius: 4px; /* A keret sugara */
 }
 
-.rate-us {
+.nav {
     font-size: 30px; /* Adjust the font size to match the star labels */
     text-align: right; /* Align the text to the right */
-    color: #cc0; /* Change the color to make it stand out */
+    font-family: sans, serif;
+    color: yellow;
     margin-right: 10px; /* Add some margin for spacing */
 }
 
-.active {
-    font-size: 30px; /* Adjust the font size to match the star labels */
-    text-align: right; /* Align the text to the right */
+.nav.active {
     background-color: gray;
-    color: #cc0;
-    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.nav:hover {
+    background-color: darkgray; /* Change the shade when hovered over */
 }

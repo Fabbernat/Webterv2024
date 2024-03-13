@@ -11,25 +11,18 @@
 <?php
 include_once "includes/navbar.inc.php";
 ?>
+<main>
     <header>
         <h1>Welcome to TryHard33</h1>
     </header>
-
-    <nav>
-        <a href="html.php">HTML</a>
-        <a href="css.php">CSS</a>
-        <a href="javascript.php">JAVASCRIPT</a>
-        <a href="php.php">PHP</a>
-        <a href="python.php">PYTHON</a>
-        <!-- Add more navigation links as needed -->
-    </nav>
-
+    <img src="img/person_learns_programming.jpg" alt="image of a person learning html js and php">
     <section>
         <!-- Your main content goes here -->
         <h2>Welcome to W3schools</h2>
         <p>Choose a topic to learn.</p>
     </section>
+</main>
 
-    <?php include "includes/footer.inc.php";?>
+    <?php include_once "includes/footer.inc.php";?>
 
 </body>
