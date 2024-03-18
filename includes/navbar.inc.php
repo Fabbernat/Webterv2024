@@ -6,20 +6,20 @@
 $current_file = basename($_SERVER['PHP_SELF']);
 ?>
 <nav>
-    <a class="nav <?php echo ($current_file == 'index.php') ? 'active' : ''; ?>"
+    <a class="nav <?php echo ($current_file == 'index.php') ? 'current_page' : ''; ?>"
        href="index.php">Home<i class="fa-star"></i></a> |
-    <a class="nav <?php echo ($current_file == 'signup.php') ? 'active' : ''; ?>"
+    <a class="nav <?php echo ($current_file == 'signup.php') ? 'current_page' : ''; ?>"
        href="signup.php">Sign up<i class="fa-star"></i></a> |
-    <a class="nav <?php echo ($current_file == 'login.php') ? 'active' : ''; ?>"
+    <a class="nav <?php echo ($current_file == 'login.php') ? 'current_page' : ''; ?>"
        href="login.php">Log in<i class="fa-star"></i></a> |
-    <a class="nav <?php echo ($current_file == 'feedback.php') ? 'active' : ''; ?>"
+    <a class="nav <?php echo ($current_file == 'feedback.php') ? 'current_page' : ''; ?>"
        href="feedback.php">Rate Us <i class="fa-star"></i></a>
 </nav>
-<br>
 <nav>
-    <a class="nav <?php echo ($current_file == 'html.php') ? 'active' : ''; ?>" href="html.php">HTML</a>
-    <a class="nav <?php echo ($current_file == 'css.php') ? 'active' : ''; ?>" href="css.php">CSS</a>
-    <a class="nav <?php echo ($current_file == 'javascript.php') ? 'active' : ''; ?>" href="javascript.php">JAVASCRIPT</a>
-    <a class="nav <?php echo ($current_file == 'php.php') ? 'active' : ''; ?>" href="php.php">PHP</a>
-    <a class="nav <?php echo ($current_file == 'python.php') ? 'active' : ''; ?>" href="python.php">PYTHON</a>
+    <h1 class="choose-a-topic-to-learn">Choose a topic to learn:</h1>
+    <a class="nav <?php echo ($current_file == 'html.php') ? 'current_page' : ''; ?>" href="html.php">HTML</a>
+    <a class="nav <?php echo ($current_file == 'css.php') ? 'current_page' : ''; ?>" href="css.php">CSS</a>
+    <a class="nav <?php echo ($current_file == 'javascript.php') ? 'current_page' : ''; ?>" href="javascript.php">JAVASCRIPT</a>
+    <a class="nav <?php echo ($current_file == 'php.php') ? 'current_page' : ''; ?>" href="php.php">PHP</a>
+    <a class="nav <?php echo ($current_file == 'python.php') ? 'current_page' : ''; ?>" href="python.php">PYTHON</a>
 </nav>

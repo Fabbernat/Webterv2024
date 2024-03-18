@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3schools</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +19,6 @@ include_once "includes/navbar.inc.php";
     <section>
         <!-- Your main content goes here -->
         <h2>Welcome to W3schools</h2>
-        <p>Choose a topic to learn.</p>
     </section>
 </main>
 

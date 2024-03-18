@@ -1,3 +1,45 @@
+@media only screen and (max-width: 600px) {
+    /* CSS utasítások... */
+}
+
+@media print {
+    /* CSS utasítások nyomtatáshoz... */
+}
+
+@media only screen and (resolution: 300dpi) {
+    /* CSS utasítások... */
+}
+
+@media only screen and (orientation: landscape) {
+    /* CSS utasítások... */
+}
+
+@media screen and (min-width: 768px), print {
+    /* CSS utasítások... */
+}
+
+@keyframes galeria {
+    10% {
+        background-image: url("../img/nyul1.png");
+    }
+    40% {
+        background-image: url("../img/nyul-icon.png");
+    }
+    80% {
+        background-image: url("../img/img_chrome.png");
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack the .creature elements vertically on small screens */
+    }
+
+    .creature {
+        flex: 1 0 auto; /* Allow the .creature elements to shrink if necessary */
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
@@ -123,18 +165,54 @@ input {
     border-radius: 4px; /* A keret sugara */
 }
 
+
+.choose-a-topic-to-learn{
+    border: 5px white; /* not working for some reason*/
+    font-size: 30px; /* Adjust the font size to match the star labels */
+    text-align: left; /* Align the text to the right */
+    font-family: sans, serif;
+    color: yellow;
+    margin-right: 10px; /* Add some margin for spacing */
+}
 .nav {
     font-size: 30px; /* Adjust the font size to match the star labels */
-    text-align: right; /* Align the text to the right */
+    text-align: left; /* Align the text to the right */
     font-family: sans, serif;
     color: yellow;
     margin-right: 10px; /* Add some margin for spacing */
 }
 
-.nav.active {
+.nav.current_page {
     background-color: gray;
 }
 
 .nav:hover {
     background-color: darkgray; /* Change the shade when hovered over */
+}
+
+.html-nav{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 100px;
+    margin-right:100px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.yellow-font{
+    color: yellow;
+}
+
+.lightgreen-background{
+    background-color: lightgreen;
+}
+
+.html-intro, .html-intro *{
+    text-align: left;
 }
