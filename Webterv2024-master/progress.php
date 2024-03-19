@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-// profile.php össze lesz olvasztva a progress.php-val
+// profile.php össze lett olvasztva a progress.php-val - felesleges külön oldal a 2-nek
 include_once "includes/navbar.inc.php";?>
 <main>
     <div class="progress-tracker">
