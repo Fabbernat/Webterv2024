@@ -12,8 +12,8 @@ $current_file = basename($_SERVER['PHP_SELF']);
        href="signup.php">Sign up<i class="fa-star"></i></a> |
     <a class="nav <?php echo ($current_file == 'login.php') ? 'current_page' : ''; ?>"
        href="login.php">Log in<i class="fa-star"></i></a> |
-    <a class="nav <?php echo ($current_file == 'progress.php') ? 'current_page' : ''; ?>"
-       href="progress.php">Progress <i class="fa-star"></i></a>
+    <a class="nav <?php echo ($current_file == 'profile&progress.php') ? 'current_page' : ''; ?>"
+       href="profile&progress.php">Profile and Progress <i class="fa-star"></i></a>
     <a class="nav <?php echo ($current_file == 'feedback.php') ? 'current_page' : ''; ?>"
        href="feedback.php">Rate Us <i class="fa-star"></i></a>
     <a class="nav <?php echo ($current_file == 'admin.php') ? 'current_page' : ''; ?>"

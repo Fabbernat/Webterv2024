@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TryHard</title>
+    <title>Profile and Progress</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/progress.css">
 </head>
@@ -11,6 +11,9 @@
 // profile.php össze lett olvasztva a progress.php-val - felesleges külön oldal a 2-nek
 include_once "includes/navbar.inc.php";?>
 <main>
+    <h2>Profile Information</h2>
+    <p>Welcome, [Username]!</p>
+    <p>Email: [User Email]</p>
     <div class="progress-tracker">
         <div class="progress-item">
             <div class="progress-label">HTML</div>

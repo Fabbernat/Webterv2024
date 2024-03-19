@@ -1,6 +1,4 @@
-<?php
-// https://studio.code.org/s/pre-express-2023/lessons/1/levels/2
-?>
+<!--//https://studio.code.org/s/pre-express-2023/lessons/1/levels/1-->
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -34,8 +32,8 @@ include_once "includes/navbar.inc.php";
             <label for="rating5">&#9733;</label>
         </div>
         <br>
-        <label for="comment">Comment:</label>
-        <textarea name="comment" id="comment" rows="4" cols="50" placeholder="Write your feedback here..." required></textarea>
+        <label for="comment">Comment (optional):</label>
+        <textarea name="comment" id="comment" rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
         <br>
         <button type="submit" class="button">Submit Feedback</button>
     </form>

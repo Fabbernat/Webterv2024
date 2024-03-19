@@ -59,8 +59,12 @@ body > h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
 }
 
-* {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    background-color: #f2f2f2;
 }
 
 .greendiv {
@@ -75,14 +79,12 @@ aside {
     horiz-align: left;
 }
 
-/* 01.22. */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the content */
 }
 
+/* Header Styles */
 header {
     background-color: #4CAF50;
     padding: 20px;
@@ -90,6 +92,7 @@ header {
     color: white;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #333;
     overflow: hidden;
@@ -97,11 +100,42 @@ nav {
 
 nav a {
     float: left;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nav {
+    font-size: 30px; /* Adjust the font size to match the star labels */
+    text-align: left; /* Align the text to the right */
+    font-family: sans, serif;
+    color: yellow;
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.nav.current_page {
+    background-color: gray;
+}
+
+.nav:hover {
+    background-color: darkgray; /* Change the shade when hovered over */
+}
+
+.html-css-nav {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -122,22 +156,27 @@ footer {
     color: #ffcc00; /* Change the color to match the text */
 }
 
+.star-rating {
+    display: inline-block;
+    font-size: 0; /* Hide the text labels */
+}
+
 .star-rating input[type="radio"] {
-    display: none;
+    display: none; /* Hide the radio buttons */
 }
 
 .star-rating label {
-    font-size: 30px;
-    color: #ccc;
-    cursor: pointer;
+    font-size: 30px; /* Size of the stars */
+    color: #ccc; /* Default color for unchecked stars */
+    cursor: pointer; /* Show pointer cursor on hover */
 }
 
 .star-rating input[type="radio"]:checked ~ label {
-    color: #ffcc00; /* Change the color to indicate the selected rating */
+    color: #ffcc00; /* Yellow color for checked stars */
 }
 
-
-.signup-and-login-caption{}
+.signup-and-login-caption {
+}
 
 .green-background-form {
     font-size: x-large;
@@ -150,21 +189,31 @@ footer {
     padding: 20px;
     width: 80%;
     margin-left: 100px;
-    margin-right:100px;
+    margin-right: 100px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 input {
-    width: 90%; /* A szélesség beállítása */
-    padding: 12px 20px; /* A belső térköz beállítása */
-    margin: 8px 0; /* A külső térköz beállítása */
-    box-sizing: border-box; /* A szélesség a belső térközt és a keretet is magában foglalja */
-    border: 3px solid #ccc; /* A keret beállítása */
-    border-radius: 4px; /* A keret sugara */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
 
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-.choose-a-topic-to-learn{
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.choose-a-topic-to-learn {
     border: 5px white; /* not working for some reason*/
     font-size: 30px; /* Adjust the font size to match the star labels */
     text-align: left; /* Align the text to the right */
@@ -172,46 +221,16 @@ input {
     color: yellow;
     margin-right: 10px; /* Add some margin for spacing */
 }
-.nav {
-    font-size: 30px; /* Adjust the font size to match the star labels */
-    text-align: left; /* Align the text to the right */
-    font-family: sans, serif;
-    color: yellow;
-    margin-right: 10px; /* Add some margin for spacing */
-}
 
-.nav.current_page {
-    background-color: gray;
-}
-
-.nav:hover {
-    background-color: darkgray; /* Change the shade when hovered over */
-}
-
-.html-nav{
-    font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-    margin-left: 100px;
-    margin-right:100px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.yellow-font{
+.yellow-font {
     color: yellow;
 }
 
-.lightgreen-background{
+.lightgreen-background {
     background-color: lightgreen;
 }
 
-.html-intro, .html-intro *{
+.html-intro, .html-intro * {
     text-align: left;
 }
 
@@ -219,3 +238,24 @@ input {
     background-color: white;
     border-radius: 0;
 }
+
+.btn {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 6px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.gray-background {
+    background-color: #555
+}
+
+.left, .left h1, h2, h3{
+    text-align: left;
+}
+
