@@ -237,6 +237,7 @@ input[type="submit"]:hover {
 .reset-this-root {
     background-color: white;
     border-radius: 0;
+    all: unset;
 }
 
 .btn {
@@ -255,7 +256,73 @@ input[type="submit"]:hover {
     background-color: #555
 }
 
-.left, .left h1, h2, h3{
+.left, .left h1, h2, h3 {
     text-align: left;
 }
 
+.code {
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CSS Animation section */
+
+.animation-demo {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Additional Styling */
+.animation-container {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.animation-heading {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Add your CSS styles here */
+.animation-demo img {
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+
+/* Define CSS animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scale {
+    from { transform: scale(1); }
+    to { transform: scale(1.5); }
+}
+
+@keyframes changeColor {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}

@@ -13,7 +13,6 @@ include_once "includes/navbar.inc.php"; ?>
     <section class="html-css-nav">
         <ul>
             <li><a href="#introduction">Introduction to CSS</a></li>
-            <li><a href="#tutorials">Tutorials</a></li>
             <li><a href="#examples">Interactive Examples</a></li>
             <li><a href="#challenges">Challenges</a></li>
             <li><a href="#resources">Resources</a></li>
@@ -51,37 +50,6 @@ include_once "includes/navbar.inc.php"; ?>
             to learn how to use it effectively!</p>
     </section>
 
-    <section id="tutorials">
-        <h2>Tutorials</h2>
-        <p>Below are some step-by-step tutorials to help you learn CSS:</p>
-
-        <h3>1. CSS Selectors and Basics</h3>
-        <p>Learn about different types of CSS selectors and how to apply styles to HTML elements using classes, IDs, and
-            element types.</p>
-
-        <h3>2. Understanding the Box Model</h3>
-        <p>Explore the CSS box model and how it affects the layout of elements on a web page. Learn about padding,
-            borders, and margins.</p>
-
-        <h3>3. Introduction to Flexbox</h3>
-        <p>Discover how Flexbox can simplify the process of creating flexible layouts. Learn about flex containers and
-            flex items.</p>
-
-        <h3>4. Mastering CSS Grid Layout</h3>
-        <p>Get hands-on experience with CSS Grid Layout, a powerful tool for creating complex grid-based layouts with
-            ease.</p>
-
-        <h3>5. Responsive Design Techniques</h3>
-        <p>Learn how to make your website responsive by using media queries and other techniques to adapt the layout to
-            different screen sizes.</p>
-
-        <h3>6. CSS Animations and Transitions</h3>
-        <p>Explore CSS animations and transitions to add interactivity and visual effects to your web pages.</p>
-
-        <p>Each tutorial includes explanations, examples, and exercises to help reinforce your understanding of CSS
-            concepts. Click on the links to get started!</p>
-    </section>
-
     <section id="examples">
         <h2>Interactive Examples</h2>
         <p>Explore these interactive examples to see CSS in action:</p>
@@ -96,25 +64,48 @@ include_once "includes/navbar.inc.php"; ?>
         <h3>2. CSS Box Model Demo</h3>
         <p>Visualize the CSS box model and its components (content, padding, border, margin) using this interactive
             demo. Adjust the size and spacing of the box to see how it affects the layout.</p>
-        <!-- You can embed a box model demo here -->
+        <!-- TODO embed a box model demo here -->
 
         <h3>3. Flexbox Playground</h3>
         <p>Play around with Flexbox properties to create different layouts and arrangements of elements. Drag and drop
             elements to see how they respond to changes in flex container and flex item properties.</p>
-        <!-- You can embed a Flexbox playground here -->
+        <!-- TODO embed a Flexbox playground here -->
 
         <h3>4. CSS Grid Builder</h3>
         <p>Build custom grid layouts using CSS Grid Layout with this interactive tool. Specify the number of rows and
             columns, and drag elements into the grid to position them as desired.</p>
-        <!-- You can embed a CSS Grid builder tool here -->
+        <!-- TODO embed a CSS Grid builder tool here -->
 
         <h3>5. Responsive Design Simulator</h3>
         <p>Test the responsiveness of your website by simulating different screen sizes and orientations. See how your
             layout adjusts to accommodate different devices.</p>
-        <!-- You can embed a responsive design simulator here -->
+        <!-- TODO embed a responsive design simulator here -->
 
         <p>These interactive examples provide a hands-on way to explore CSS concepts and techniques. Click on the links
             to start experimenting!</p>
+        <section id="animation-demo" class="animation-container">
+            <h3 class="animation-heading">CSS Animation Demonstration</h3>
+            <img src="img/nyul-icon.png" alt="First rabbit fades out." title="First rabbit fades out." onclick="applyAnimation(this, 'fadeOut')">
+            <p>First rabbit fades out.</p>
+            <img src="img/nyul1.png" alt="Second rabbit slides in." title="Second rabbit slides in." onclick="applyAnimation(this, 'slideIn')">
+            <p>Second rabbit slides in.</p>
+            <img src="img/nyul2.jfif" alt="Third rabbit rotates." title="Third rabbit rotates." onclick="applyAnimation(this, 'rotate')">
+            <p>Third rabbit rotates.</p>
+            <img src="img/nyul3.jfif" alt="Fourth rabbit scales." title="Fourth rabbit scales." onclick="applyAnimation(this, 'scale')">
+            <p>Fourth rabbit scales.</p>
+            <img src="img/nyul4.jfif" alt="Fifth rabbit changes color." title="Fifth rabbit changes color." onclick="applyAnimation(this, 'changeColor')">
+            <p>Fifth rabbit changes color.</p>
+        </section>
+
+        <script>
+            function applyAnimation(element, animationName) {
+                element.style.animationName = animationName; // Apply the specified animation
+                element.style.animationDuration = '1s'; // Set animation duration
+                element.style.animationTimingFunction = 'ease'; // Set animation timing function
+                element.style.animationIterationCount = '1'; // Set animation iteration count
+                element.style.animationFillMode = 'forwards'; // Keep the final state of the animation
+            }
+        </script>
     </section>
     <section id="challenges">
 
@@ -150,7 +141,8 @@ include_once "includes/navbar.inc.php"; ?>
             experts and stay updated with the latest trends in web design.</p>
         <a href="https://tryhard33cssblog.com">Visit TryHard33 CSS Blog</a>
         <h3>2. Meaowuwuka CSS Framework</h3>
-        <p>Meet Meaowuwka, the magical cat who helps you learn CSS and pass the university subject called "Web tervezés".
+        <p>Meet Meaowuwka, the magical cat who helps you learn CSS and pass the university subject called "Web
+            tervezés".
             Discover the Meaowuwuka CSS Framework, a lightweight and flexible framework for building beautiful and
             responsive websites. Explore its features and documentation to streamline your development process.</p>
         <a href="https://meaowuwukacss.com">Explore Meaowuwuka CSS Framework</a>
