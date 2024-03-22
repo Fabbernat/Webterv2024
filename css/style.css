@@ -18,18 +18,6 @@
     /* CSS utasítások... */
 }
 
-@keyframes galeria {
-    10% {
-        background-image: url("../img/nyul1.png");
-    }
-    40% {
-        background-image: url("../img/nyul-icon.png");
-    }
-    80% {
-        background-image: url("../img/img_chrome.png");
-    }
-}
-
 
 @media screen and (max-width: 600px) {
     .container {
@@ -38,6 +26,70 @@
 
     .creature {
         flex: 1 0 auto; /* Allow the .creature elements to shrink if necessary */
+    }
+}
+.bar--higher {
+    animation: loadHigherBar 1s ease-out forwards; /* Apply the animation */
+}
+
+.bar--high {
+    animation: loadHighBar 1s ease-out forwards; /* Apply the animation */
+}
+
+.bar--medium {
+    animation: loadMediumBar 1s ease-out forwards; /* Apply the animation */
+}
+
+.bar--low {
+    animation: loadLowBar 1s ease-out forwards; /* Apply the animation */
+}
+
+.bar--lower {
+    animation: loadLowerBar 1s ease-out forwards; /* Apply the animation */
+}
+
+@keyframes loadHigherBar {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 90%; /* End with the desired width */
+    }
+}
+
+@keyframes loadHighBar {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 76%; /* End with the desired width */
+    }
+}
+
+@keyframes loadMediumBar {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 55%; /* End with the desired width */
+    }
+}
+
+@keyframes loadLowBar {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 32%; /* End with the desired width */
+    }
+}
+
+@keyframes loadLowerBar {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 20%; /* End with the desired width */
     }
 }
 
@@ -54,7 +106,6 @@ body > h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-    font-size: x-large;
     width: 30%;
     height: 50px;
     border-radius: 10px;
@@ -68,7 +119,7 @@ body {
     background-color: #f2f2f2;
     background-image: url("../img/background.png");
     background-size: cover;
-    }
+}
 
 .greendiv {
     background-color: lightgreen;
@@ -152,6 +203,22 @@ footer {
     color: white;
 }
 
+footer section {
+    width: 80%;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+}
+
+footer section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer section ul li {
+    margin-bottom: 10px;
+}
 
 /* Style for the star icon */
 .fa-star {
@@ -191,7 +258,7 @@ footer {
     border-radius: 10px;
     padding: 20px;
     width: 35%;
-    margin: 0 auto;
+    margin: 30px auto 0;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -295,38 +362,66 @@ input[type="submit"]:hover {
 
 /* Define CSS animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideOut {
-    from { transform: translateX(0); }
-    to { transform: translateX(100%); }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes scale {
-    from { transform: scale(1); }
-    to { transform: scale(1.5); }
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
 
 @keyframes changeColor {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 /* Move the inline CSS for the footer section to style.css */
@@ -352,8 +447,16 @@ footer section ul li {
     margin-bottom: 10px;
 }
 
-.white{
+.white {
     background-color: white;
+}
+
+.feedback-form{
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .seventy-five-percent {
@@ -361,4 +464,66 @@ footer section ul li {
     margin: 0 auto; /* Horizontally center the element */
     padding: 10px;
     text-align: center;
+}
+
+/* Checkbox styling */
+.interests label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.interests input[type="checkbox"] + label:before {
+    content: "\2714";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.interests input[type="checkbox"]:checked + label:before {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Progress Tracker Styles */
+.progress-tracker {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.progress-item {
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.progress-bar-inner {
+    background-color: #4caf50;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.margin-30-px{
+    margin: 30px auto 0;
 }

@@ -7,6 +7,6 @@
             <li style="margin-bottom: 10px;"><a href="https://www.linkedin.com/in/meowuwuka">linkedin.com/meowuwuka</a></li>
             <li style="margin-bottom: 10px;"><a href="https://www.meowuwuka.com">meowuwuka.com</a></li>
         </ul>
-        <p>&copy; 2024 TryHard33. All rights reserved.</p>
+        <p>&copy; 2024 - 2024 TryHard33. All rights reserved.</p>
     </section>
 </footer>
