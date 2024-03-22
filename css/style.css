@@ -459,7 +459,7 @@ footer section ul li {
     box-sizing: border-box; /* Include padding in the width calculation */
 }
 
-.seventy-five-percent {
+.seventy-five-percent-width {
     width: 75%;
     margin: 0 auto; /* Horizontally center the element */
     padding: 10px;
