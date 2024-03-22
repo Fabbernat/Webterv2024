@@ -1,0 +1,364 @@
+@media only screen and (max-width: 600px) {
+    /* CSS utasítások... */
+}
+
+@media print {
+    /* CSS utasítások nyomtatáshoz... */
+}
+
+@media only screen and (resolution: 300dpi) {
+    /* CSS utasítások... */
+}
+
+@media only screen and (orientation: landscape) {
+    /* CSS utasítások... */
+}
+
+@media screen and (min-width: 768px), print {
+    /* CSS utasítások... */
+}
+
+@keyframes galeria {
+    10% {
+        background-image: url("../img/nyul1.png");
+    }
+    40% {
+        background-image: url("../img/nyul-icon.png");
+    }
+    80% {
+        background-image: url("../img/img_chrome.png");
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack the .creature elements vertically on small screens */
+    }
+
+    .creature {
+        flex: 1 0 auto; /* Allow the .creature elements to shrink if necessary */
+    }
+}
+
+body > h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.blue {
+    color: blue;
+}
+
+.darkcyan {
+    color: darkcyan;
+}
+
+.button {
+    font-size: x-large;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    }
+
+.greendiv {
+    background-color: lightgreen;
+    border-radius: 100px;
+    padding: 0;
+    margin: 10px;
+}
+
+aside {
+    vertical-align: middle;
+    horiz-align: left;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the content */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav {
+    font-size: 30px; /* Adjust the font size to match the star labels */
+    text-align: left; /* Align the text to the right */
+    font-family: sans, serif;
+    color: yellow;
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.nav.current_page {
+    background-color: gray;
+}
+
+.nav:hover {
+    background-color: darkgray; /* Change the shade when hovered over */
+}
+
+.html-css-nav {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Style for the star icon */
+.fa-star {
+    margin-left: 5px; /* Add some spacing between the text and the icon */
+    color: #ffcc00; /* Change the color to match the text */
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 0; /* Hide the text labels */
+}
+
+.star-rating input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+.star-rating label {
+    font-size: 30px; /* Size of the stars */
+    color: #ccc; /* Default color for unchecked stars */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffcc00; /* Yellow color for checked stars */
+}
+
+.signup-and-login-caption {
+}
+
+.background-form {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.choose-a-topic-to-learn {
+    border: 5px white; /* not working for some reason*/
+    font-size: 30px; /* Adjust the font size to match the star labels */
+    text-align: left; /* Align the text to the right */
+    font-family: sans, serif;
+    color: yellow;
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.yellow-font {
+    color: yellow;
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+}
+
+.html-intro, .html-intro * {
+    text-align: left;
+}
+
+.reset-this-root {
+    background-color: white;
+    border-radius: 0;
+    all: unset;
+}
+
+.btn {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 6px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.gray-background {
+    background-color: #555
+}
+
+.left, .left h1, h2, h3 {
+    text-align: left;
+}
+
+.code {
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CSS Animation section */
+
+.animation-demo {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Additional Styling */
+.animation-container {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.animation-heading {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Add your CSS styles here */
+.animation-demo img {
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    transition: transform 0.5s ease; /* Add smooth transition effect */
+}
+
+/* Define CSS animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scale {
+    from { transform: scale(1); }
+    to { transform: scale(1.5); }
+}
+
+@keyframes changeColor {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Move the inline CSS for the footer section to style.css */
+
+footer {
+    text-align: center;
+}
+
+footer section {
+    width: 80%;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+}
+
+footer section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer section ul li {
+    margin-bottom: 10px;
+}
+
+.white{
+    background-color: white;
+}
+
+.seventy-five-percent {
+    width: 75%;
+    margin: 0 auto; /* Horizontally center the element */
+    padding: 10px;
+    text-align: center;
+}

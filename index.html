@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> TryHard - Home Page</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+  <a class="nav current_page"
+     href="index.html">Home<i class="fa-star"></i></a> |
+  <a class="nav "
+     href="signup.html">Sign up<i class="fa-star"></i></a> |
+  <a class="nav "
+     href="login.html">Log in<i class="fa-star"></i></a> |
+  <a class="nav "
+     href="profile&progress.html">Profile and Progress <i class="fa-star"></i></a>
+  <a class="nav "
+     href="feedback.html">Rate Us <i class="fa-star"></i></a>
+  <a class="nav "
+     href="admin.html">Admin <i class="fa-star"></i></a>
+
+</nav>
+<nav>
+  <h1 class="choose-a-topic-to-learn">Choose a topic to learn:</h1>
+  <a class="nav " href="html.html">HTML</a>
+  <a class="nav " href="css.html">CSS</a>
+  <a class="nav " href="javascript.html">JAVASCRIPT</a>
+  <a class="nav " href="php.html">PHP</a>
+  <a class="nav " href="python.html">PYTHON</a>
+</nav>
+<header>
+  <h1>Welcome to TryHard33</h1>
+</header>
+<main>
+  <img alt="image of a person learning html js and php" src="img/person_learns_programming.jpg">
+  <section class="white seventy-five-percent">
+    <!-- main content goes here -->
+    <h2>Welcome to the TryHard33 website</h2>
+    <p>An interactive website where you can learn HTML, CSS, Javascript, PHP and Python</p>
+    <a class="btn margin-bottom" href="html.html">Study
+      our free HTML Tutorial &#187;</a><br>
+  </section>
+</main>
+<footer>
+  <section>
+    <h2>Contact us:</h2>
+    <ul>
+      <li><a href="mailto:meowuwuka@calculus.hu">meowuwuka@calculus.hu</a></li>
+      <li><a href="https://www.facebook.com/meowuwuka">facebook.com/meowuwuka</a></li>
+      <li><a href="https://www.linkedin.com/in/meowuwuka">linkedin.com/meowuwuka</a></li>
+      <li><a href="https://www.meowuwuka.com">meowuwuka.com</a></li>
+    </ul>
+    <p>&copy; 2024 TryHard33. All rights reserved.</p>
+  </section>
+</footer>
+
+</body>
+<script>
+    (function () {
+        var ws = new WebSocket('ws://' + window.location.host +
+            '/jb-server-page?reloadMode=RELOAD_ON_SAVE&' +
+            'referrer=' + encodeURIComponent(window.location.pathname));
+        ws.onmessage = function (msg) {
+            if (msg.data === 'reload') {
+                window.location.reload();
+            }
+            if (msg.data.startsWith('update-css ')) {
+                var messageId = msg.data.substring(11);
+                var links = document.getElementsByTagName('link');
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+                    if (link.rel !== 'stylesheet') continue;
+                    var clonedLink = link.cloneNode(true);
+                    var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+                    if (newHref !== link.href) {
+                        clonedLink.href = newHref;
+                    } else {
+                        var indexOfQuest = newHref.indexOf('?');
+                        if (indexOfQuest >= 0) {
+                            // to support ?foo#hash
+                            clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                newHref.substring(indexOfQuest + 1);
+                        } else {
+                            clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                        }
+                    }
+                    link.replaceWith(clonedLink);
+                }
+            }
+        };
+    })();
+</script>
