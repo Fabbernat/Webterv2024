@@ -21,7 +21,7 @@ $current_file = basename($_SERVER['PHP_SELF']);
 
 </nav>
 <nav>
-    <h1 class="choose-a-topic-to-learn">Choose a topic to learn:</h1>
+    <h1 class="choose-a-topic-to-learn">Choose a lesson to learn:</h1>
     <a class="nav <?php echo ($current_file == 'html.php') ? 'current_page' : ''; ?>" href="html.php">HTML</a>
     <a class="nav <?php echo ($current_file == 'css.php') ? 'current_page' : ''; ?>" href="css.php">CSS</a>
     <a class="nav <?php echo ($current_file == 'javascript.php') ? 'current_page' : ''; ?>" href="javascript.php">JAVASCRIPT</a>

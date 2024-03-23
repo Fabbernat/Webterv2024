@@ -28,6 +28,7 @@
         flex: 1 0 auto; /* Allow the .creature elements to shrink if necessary */
     }
 }
+
 .bar--higher {
     animation: loadHigherBar 1s ease-out forwards; /* Apply the animation */
 }
@@ -93,7 +94,7 @@
     }
 }
 
-body > h1, h2, h3, h4, h5, h6 {
+body > h1, h2, h3 {
     text-align: center;
 }
 
@@ -451,7 +452,7 @@ footer section ul li {
     background-color: white;
 }
 
-.feedback-form{
+.feedback-form {
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
@@ -524,6 +525,36 @@ footer section ul li {
     height: 100%;
 }
 
-.margin-30-px{
+.margin-30-px {
     margin: 30px auto 0;
+}
+
+.lesson-container {
+    width: 80%;
+    margin: 20px auto 0;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+.lesson-content {
+    margin-top: 20px;
+}
+
+.php-code {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.output {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.left-align {
+    text-align: left;
 }
