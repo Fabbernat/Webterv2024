@@ -8,41 +8,46 @@
 <body>
 <nav>
   <a class="nav "
-     href="index.html">Home<i class="fa-star"></i></a> |
+     href="index.html">Home<i class="yellow"></i></a> |
   <a class="nav "
-     href="signup.html">Sign up<i class="fa-star"></i></a> |
+     href="signup.html">Sign up<i class="yellow"></i></a> |
   <a class="nav "
-     href="login.html">Log in<i class="fa-star"></i></a> |
+     href="login.html">Log in<i class="yellow"></i></a> |
   <a class="nav "
-     href="profile&progress.html">Profile and Progress <i class="fa-star"></i></a>
+     href="profile&progress.html">Profile and Progress <i class="yellow"></i></a>
   <a class="nav "
-     href="feedback.html">Rate Us <i class="fa-star"></i></a>
+     href="feedback.html">Feedback <i class="yellow"></i></a>
   <a class="nav "
-     href="admin.html">Admin <i class="fa-star"></i></a>
+     href="admin.html">Admin <i class="yellow"></i></a>
 
 </nav>
 <nav>
-  <h1 class="choose-a-topic-to-learn">Choose a lesson to learn:</h1>
+  <h1 class="choose-a-lesson-to-learn">Choose a lesson to learn:</h1>
   <a class="nav " href="html.html">HTML</a>
   <a class="nav " href="css.html">CSS</a>
   <a class="nav current_page" href="javascript.html">JAVASCRIPT</a>
   <a class="nav " href="php.html">PHP</a>
   <a class="nav " href="python.html">PYTHON</a>
 </nav>
+<header class="yellow-font gray-background">
+  <h1>Javascript tutorial</h1>
+  <section class="html-css-nav">
+
+    <ul class="left">
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#variables">Variables and Data Types</a></li>
+      <li><a href="#operators">Operators and Expressions</a></li>
+      <li><a href="#control-flow">Control Flow</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#objects-arrays">Objects and Arrays</a></li>
+      <li><a href="#dom-manipulation">DOM Manipulation</a></li>
+      <li><a href="#event-handling">Event Handling</a></li>
+    </ul>
+  </section>
+</header>
 <main class="lesson-container white left-align">
   <h2>Javascript tutorial</h2>
-  <nav>
-    <h1 class="choose-a-topic-to-learn">Quick links to the topics:</h1>
-    <a class="nav " href="#introduction">Introduction</a>
-    <a class="nav " href="#variables">Variables and Data Types</a>
-    <a class="nav " href="#operators">Operators and Expressions</a>
-    <a class="nav " href="#control-flow">Control Flow</a>
-    <a class="nav " href="#functions">Functions</a>
-    <a class="nav " href="#objects-arrays">Objects and Arrays</a>
-    <a class="nav " href="#dom-manipulation">DOM Manipulation</a>
-    <a class="nav " href="#event-handling">Event Handling</a>
-  </nav>
-  <section class="white seventy-five-percent-width" id="introduction">
+  <section class="lesson-content white" id="introduction">
     <h2>Introduction to JavaScript</h2>
     <p>JavaScript is a high-level programming language that is widely used for creating interactive web pages. It allows
       you to add dynamic behavior to your websites, making them more engaging and user-friendly.</p>
@@ -58,7 +63,7 @@
     </ul>
   </section>
 
-  <section class="white seventy-five-percent-width" id="variables">
+  <section class="lesson-content white" id="variables">
     <h2>Variables and Data Types</h2>
     <p>In JavaScript, variables are used to store data values. There are several data types in JavaScript:</p>
     <ul>
@@ -83,10 +88,11 @@ var y = null; // Assigning a null value to a variable
     </code></pre>
   </section>
 
-  <section class="white seventy-five-percent-width" id="operators">
+  <section class="lesson-content white" id="operators">
     <h2>Operators and Expressions</h2>
     <article>
-      <p>In JavaScript, operators are symbols that perform operations on operands. They can be classified into different categories:</p>
+      <p>In JavaScript, operators are symbols that perform operations on operands. They can be classified into different
+        categories:</p>
       <ul>
         <li>Arithmetic operators (+, -, *, /, %)</li>
         <li>Assignment operators (=, +=, -=, *=, /=, %=)</li>
@@ -96,7 +102,8 @@ var y = null; // Assigning a null value to a variable
         <li>Ternary operator (condition ? expr1 : expr2)</li>
         <li>Unary operators (++x, --x, +x, -x, !x)</li>
       </ul>
-      <p>Expressions are combinations of values, variables, and operators that are evaluated to produce a result. For example:</p>
+      <p>Expressions are combinations of values, variables, and operators that are evaluated to produce a result. For
+        example:</p>
       <pre><code>
 var x = 10;
 var y = 20;
@@ -105,28 +112,37 @@ var z = x + y; // z is assigned the value 30
     </article>
   </section>
 
-  <section class="white seventy-five-percent-width" id="control-flow">
+  <section class="lesson-content white" id="control-flow">
     <h2>Control Flow</h2>
     <article>
-      <p>Control flow refers to the order in which statements are executed in a program. JavaScript provides several control flow statements to control the execution flow:</p>
+      <p>Control flow refers to the order in which statements are executed in a program. JavaScript provides several
+        control flow statements to control the execution flow:</p>
       <ul>
         <li>if statement: Executes a block of code if a specified condition is true.</li>
-        <li>if...else statement: Executes a block of code if a condition is true, and another block of code if the condition is false.</li>
+        <li>if...else statement: Executes a block of code if a condition is true, and another block of code if the
+          condition is false.
+        </li>
         <li>else if statement: Allows you to specify a new condition to test if the first condition is false.</li>
-        <li>switch statement: Evaluates an expression and executes a block of code depending on the value of the expression.</li>
+        <li>switch statement: Evaluates an expression and executes a block of code depending on the value of the
+          expression.
+        </li>
         <li>for loop: Executes a block of code a specified number of times.</li>
         <li>while loop: Executes a block of code as long as a specified condition is true.</li>
-        <li>do...while loop: Executes a block of code once, and then repeats the loop as long as a specified condition is true.</li>
+        <li>do...while loop: Executes a block of code once, and then repeats the loop as long as a specified condition
+          is true.
+        </li>
         <li>break statement: Terminates the current loop, switch, or label statement.</li>
         <li>continue statement: Jumps to the next iteration of a loop.</li>
       </ul>
     </article>
   </section>
 
-  <section class="white seventy-five-percent-width" id="functions">
+  <section class="lesson-content white" id="functions">
     <h2>Functions</h2>
     <article>
-      <p>A function is a block of reusable code that performs a specific task. Functions allow you to organize your code into logical units, making it easier to understand, debug, and maintain. In JavaScript, you can define functions using the function keyword:</p>
+      <p>A function is a block of reusable code that performs a specific task. Functions allow you to organize your code
+        into logical units, making it easier to understand, debug, and maintain. In JavaScript, you can define functions
+        using the function keyword:</p>
       <pre><code>
 function functionName(parameters) {
     // Function body
@@ -134,34 +150,46 @@ function functionName(parameters) {
     return value; // Optional return statement
 }
         </code></pre>
-      <p>Functions can take parameters (input values) and return a value as output. They can also be assigned to variables, passed as arguments to other functions, and returned from other functions.</p>
+      <p>Functions can take parameters (input values) and return a value as output. They can also be assigned to
+        variables, passed as arguments to other functions, and returned from other functions.</p>
     </article>
   </section>
 
-  <section class="white seventy-five-percent-width" id="objects-arrays">
+  <section class="lesson-content white" id="objects-arrays">
     <h2>Objects and Arrays</h2>
     <article>
       <p>Objects and arrays are two fundamental data structures in JavaScript:</p>
       <h3>Objects:</h3>
-      <p>An object is a collection of key-value pairs. Each key is a unique identifier for a property, and each value is the data associated with that property. Objects are used to represent complex data structures and are central to JavaScript programming.</p>
+      <p>An object is a collection of key-value pairs. Each key is a unique identifier for a property, and each value is
+        the data associated with that property. Objects are used to represent complex data structures and are central to
+        JavaScript programming.</p>
       <h3>Arrays:</h3>
-      <p>An array is an ordered collection of values. Each value in an array is called an element, and each element is associated with an index starting from 0. Arrays are used to store lists of data, such as a list of numbers or a list of objects.</p>
+      <p>An array is an ordered collection of values. Each value in an array is called an element, and each element is
+        associated with an index starting from 0. Arrays are used to store lists of data, such as a list of numbers or a
+        list of objects.</p>
     </article>
   </section>
 
-  <section class="white seventy-five-percent-width" id="dom-manipulation">
+  <section class="lesson-content white" id="dom-manipulation">
     <h2>DOM Manipulation</h2>
     <article>
-      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree-like structure, where each node represents an element in the document.</p>
-      <p>DOM manipulation refers to the process of programmatically interacting with the DOM tree to dynamically update the content, structure, and style of web pages. JavaScript provides methods and properties for accessing, creating, modifying, and deleting elements in the DOM.</p>
+      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of
+        HTML and XML documents as a tree-like structure, where each node represents an element in the document.</p>
+      <p>DOM manipulation refers to the process of programmatically interacting with the DOM tree to dynamically update
+        the content, structure, and style of web pages. JavaScript provides methods and properties for accessing,
+        creating, modifying, and deleting elements in the DOM.</p>
     </article>
   </section>
 
-  <section class="white seventy-five-percent-width" id="event-handling">
+  <section class="lesson-content white" id="event-handling">
     <h2>Event Handling</h2>
     <article>
-      <p>Event handling is the process of responding to user interactions with a web page, such as clicks, mouse movements, keyboard input, and form submissions. In JavaScript, you can handle events by attaching event listeners to HTML elements and specifying the code to execute when the event occurs.</p>
-      <p>Common events in web development include click, mouseover, mouseout, keydown, keyup, submit, and many more. By handling events, you can create interactive and dynamic web applications that respond to user actions in real-time.</p>
+      <p>Event handling is the process of responding to user interactions with a web page, such as clicks, mouse
+        movements, keyboard input, and form submissions. In JavaScript, you can handle events by attaching event
+        listeners to HTML elements and specifying the code to execute when the event occurs.</p>
+      <p>Common events in web development include click, mouseover, mouseout, keydown, keyup, submit, and many more. By
+        handling events, you can create interactive and dynamic web applications that respond to user actions in
+        real-time.</p>
     </article>
   </section>
 </main>

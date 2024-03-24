@@ -8,21 +8,21 @@
 <body>
 <nav>
   <a class="nav "
-     href="index.html">Home<i class="fa-star"></i></a> |
+     href="index.html">Home<i class="yellow"></i></a> |
   <a class="nav "
-     href="signup.html">Sign up<i class="fa-star"></i></a> |
+     href="signup.html">Sign up<i class="yellow"></i></a> |
   <a class="nav "
-     href="login.html">Log in<i class="fa-star"></i></a> |
+     href="login.html">Log in<i class="yellow"></i></a> |
   <a class="nav "
-     href="profile&progress.html">Profile and Progress <i class="fa-star"></i></a>
+     href="profile&progress.html">Profile and Progress <i class="yellow"></i></a>
   <a class="nav "
-     href="feedback.html">Rate Us <i class="fa-star"></i></a>
+     href="feedback.html">Feedback <i class="yellow"></i></a>
   <a class="nav "
-     href="admin.html">Admin <i class="fa-star"></i></a>
+     href="admin.html">Admin <i class="yellow"></i></a>
 
 </nav>
 <nav>
-  <h1 class="choose-a-topic-to-learn">Choose a lesson to learn:</h1>
+  <h1 class="choose-a-lesson-to-learn">Choose a lesson to learn:</h1>
   <a class="nav " href="html.html">HTML</a>
   <a class="nav current_page" href="css.html">CSS</a>
   <a class="nav " href="javascript.html">JAVASCRIPT</a>
@@ -32,7 +32,7 @@
 <header class="yellow-font gray-background">
   <h1>CSS Tutorial</h1>
   <section class="html-css-nav">
-    <ul>
+    <ul class="left">
       <li><a href="#introduction">Introduction to CSS</a></li>
       <li><a href="#examples">Interactive Examples</a></li>
       <li><a href="#challenges">Challenges</a></li>
@@ -80,13 +80,16 @@
     <p>Experiment with different colors and color combinations using this interactive color picker. See how changing
       the color affects the appearance of various HTML elements.</p>
     <div>
-      <input id="colorPicker" type="color" value="#ff0000">
-      <label for="colorPicker">Choose a color</label>
+      <label for="colorPicker">Choose a color
+        <br>
+        <input class="colorpicker" id="colorPicker" type="color" value="#ff0000">
+        </label>
     </div>
     <h3>2. CSS Box Model Demo</h3>
     <p>Visualize the CSS box model and its components (content, padding, border, margin) using this interactive
       demo. Adjust the size and spacing of the box to see how it affects the layout.</p>
-    <img src="img/box_model.png" alt="A picture showing the css box model.">
+    <img alt="A picture showing the css box model." class="display-block seventy-five-percent-width"
+         src="img/box_model.png">
     <!-- TODO embed a box model demo here -->
 
     <h3>3. Flexbox Playground</h3>

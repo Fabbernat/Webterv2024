@@ -10,21 +10,21 @@
 <body>
 <nav>
   <a class="nav "
-     href="index.html">Home<i class="fa-star"></i></a> |
+     href="index.html">Home<i class="yellow"></i></a> |
   <a class="nav "
-     href="signup.html">Sign up<i class="fa-star"></i></a> |
+     href="signup.html">Sign up<i class="yellow"></i></a> |
   <a class="nav "
-     href="login.html">Log in<i class="fa-star"></i></a> |
+     href="login.html">Log in<i class="yellow"></i></a> |
   <a class="nav "
-     href="profile&progress.html">Profile and Progress <i class="fa-star"></i></a>
+     href="profile&progress.html">Profile and Progress <i class="yellow"></i></a>
   <a class="nav current_page"
-     href="feedback.html">Rate Us <i class="fa-star"></i></a>
+     href="feedback.html">Feedback <i class="yellow"></i></a>
   <a class="nav "
-     href="admin.html">Admin <i class="fa-star"></i></a>
+     href="admin.html">Admin <i class="yellow"></i></a>
 
 </nav>
 <nav>
-  <h1 class="choose-a-topic-to-learn">Choose a lesson to learn:</h1>
+  <h1 class="choose-a-lesson-to-learn">Choose a lesson to learn:</h1>
   <a class="nav " href="html.html">HTML</a>
   <a class="nav " href="css.html">CSS</a>
   <a class="nav " href="javascript.html">JAVASCRIPT</a>
@@ -34,30 +34,31 @@
 <header>
   <h1>Feedback</h1>
 </header>
-
-<section class="white feedback-form">
-  <!-- Your feedback form goes here -->
-  <form action="#" class="background-form" method="POST"><!--includes/submit_feedback.inc.php-->
-    <h2>Rate Us (1-5):</h2>
-    <div class="star-rating">
-      <input id="rating1" name="rating" required type="radio" value="1">
-      <label for="rating1">&#9733;</label>
-      <input id="rating2" name="rating" type="radio" value="2">
-      <label for="rating2">&#9733;</label>
-      <input id="rating3" name="rating" type="radio" value="3">
-      <label for="rating3">&#9733;</label>
-      <input id="rating4" name="rating" type="radio" value="4">
-      <label for="rating4">&#9733;</label>
-      <input id="rating5" name="rating" type="radio" value="5">
-      <label for="rating5">&#9733;</label>
-    </div>
-    <br>
-    <label for="comment">Comment (optional):</label>
-    <textarea cols="50" id="comment" name="comment" placeholder="Write your feedback here..." rows="4"></textarea>
-    <br>
-    <button class="button" type="submit">Submit Feedback</button>
-  </form>
-</section>
+<main>
+  <section>
+    <form action="#" class="white background-form  feedback-form " method="POST"><!--includes/submit_feedback.inc.php-->
+      <h2>Rate Us (1-5):</h2>
+      <div class="star-rating">
+        <input id="rating1" name="rating" required type="radio" value="1">
+        <label for="rating1">&#9733;</label>
+        <input id="rating2" name="rating" type="radio" value="2">
+        <label for="rating2">&#9733;</label>
+        <input id="rating3" name="rating" type="radio" value="3">
+        <label for="rating3">&#9733;</label>
+        <input id="rating4" name="rating" type="radio" value="4">
+        <label for="rating4">&#9733;</label>
+        <input id="rating5" name="rating" type="radio" value="5">
+        <label for="rating5">&#9733;</label>
+      </div>
+      <br>
+      <label for="comment">Feel free to leave a comment:
+        <textarea cols="50" id="comment" name="comment" placeholder="Write your feedback here..." rows="4"></textarea>
+      </label>
+      <br>
+      <button class="button" type="submit">Submit Feedback</button>
+    </form>
+  </section>
+</main>
 
 <footer>
   <section>
