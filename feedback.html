@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title> TryHard - Feedback</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
 </head>
 <body>
 <nav>
@@ -17,7 +18,7 @@
      href="login.html">Log in<i class="yellow"></i></a> |
   <a class="nav "
      href="profile.html">Profile<i class="yellow"></i></a>
-<a class="nav "
+  <a class="nav "
      href="progress.html">Progress <i class="yellow"></i></a>
 
   <a class="nav current_page"
@@ -41,17 +42,37 @@
   <section>
     <form action="#" class="white background-form  feedback-form " method="POST"><!--includes/submit_feedback.inc.php-->
       <h2>Rate Us (1-5):</h2>
-      <div class="star-rating">
-        <input id="rating1" name="rating" required type="radio" value="1">
-        <label for="rating1">&#9733;</label>
-        <input id="rating2" name="rating" type="radio" value="2">
-        <label for="rating2">&#9733;</label>
-        <input id="rating3" name="rating" type="radio" value="3">
-        <label for="rating3">&#9733;</label>
-        <input id="rating4" name="rating" type="radio" value="4">
-        <label for="rating4">&#9733;</label>
-        <input id="rating5" name="rating" type="radio" value="5">
-        <label for="rating5">&#9733;</label>
+      <div class="rating">
+        <label>
+          <input name="stars" type="radio" value="1"/>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input name="stars" type="radio" value="2"/>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input name="stars" type="radio" value="3"/>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input name="stars" type="radio" value="4"/>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
+        <label>
+          <input name="stars" type="radio" value="5"/>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+          <span class="fa fa-star icon"></span>
+        </label>
       </div>
       <br>
       <label for="comment">Feel free to leave a comment:

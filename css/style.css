@@ -269,7 +269,8 @@ footer section ul li {
     border: 5px solid black;
     border-radius: 10px;
     width: 80%;
-    margin: 30px auto 0;
+    padding: 20px;
+    margin: 30px auto;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -466,6 +467,7 @@ footer section ul li {
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     padding: 20px;
+    margin-bottom: 30px;
     box-sizing: border-box; /* Include padding in the width calculation */
 }
 
@@ -651,4 +653,75 @@ input[type="checkbox"] {
 /* Style for the label */
 .custom-checkbox label {
     font-size: 16px;
+}
+
+/*feedback star rating*/
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #ffa904;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #ffa904;
+}
+
+.h1-demo{
+    font-size: xx-large;
 }
