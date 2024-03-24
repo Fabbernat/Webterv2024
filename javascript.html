@@ -14,7 +14,11 @@
   <a class="nav "
      href="login.html">Log in<i class="yellow"></i></a> |
   <a class="nav "
-     href="profile&progress.html">Profile and Progress <i class="yellow"></i></a>
+     href="profile.html">Profile<i class="yellow"></i></a>
+<a class="nav "
+     href="progress.html">Progress <i class="yellow"></i></a>
+
+
   <a class="nav "
      href="feedback.html">Feedback <i class="yellow"></i></a>
   <a class="nav "
@@ -31,7 +35,7 @@
 </nav>
 <header class="yellow-font gray-background">
   <h1>Javascript tutorial</h1>
-  <section class="html-css-nav">
+  <div class="html-css-nav">
 
     <ul class="left">
       <li><a href="#introduction">Introduction</a></li>
@@ -43,7 +47,7 @@
       <li><a href="#dom-manipulation">DOM Manipulation</a></li>
       <li><a href="#event-handling">Event Handling</a></li>
     </ul>
-  </section>
+  </div>
 </header>
 <main class="lesson-container white left-align">
   <h2>Javascript tutorial</h2>
@@ -89,16 +93,16 @@ var y = null; // Assigning a null value to a variable
   </section>
 
   <section class="lesson-content white" id="operators">
-    <h2>Operators and Expressions</h2>
     <article>
+    <h2>Operators and Expressions</h2>
       <p>In JavaScript, operators are symbols that perform operations on operands. They can be classified into different
         categories:</p>
       <ul>
         <li>Arithmetic operators (+, -, *, /, %)</li>
         <li>Assignment operators (=, +=, -=, *=, /=, %=)</li>
-        <li>Comparison operators (==, ===, !=, !==, >, <, >=, <=)</li>
+        <li>Comparison operators (==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=)</li>
         <li>Logical operators (&&, ||, !)</li>
-        <li>Bitwise operators (&, |, ^, ~, <<, >>, >>>)</li>
+        <li>Bitwise operators (&, |, ^, ~, &gt;&gt;, &lt;&lt;, &gt;&gt;&gt;)</li>
         <li>Ternary operator (condition ? expr1 : expr2)</li>
         <li>Unary operators (++x, --x, +x, -x, !x)</li>
       </ul>
@@ -113,8 +117,8 @@ var z = x + y; // z is assigned the value 30
   </section>
 
   <section class="lesson-content white" id="control-flow">
-    <h2>Control Flow</h2>
     <article>
+    <h2>Control Flow</h2>
       <p>Control flow refers to the order in which statements are executed in a program. JavaScript provides several
         control flow statements to control the execution flow:</p>
       <ul>
@@ -138,8 +142,8 @@ var z = x + y; // z is assigned the value 30
   </section>
 
   <section class="lesson-content white" id="functions">
-    <h2>Functions</h2>
     <article>
+    <h2>Functions</h2>
       <p>A function is a block of reusable code that performs a specific task. Functions allow you to organize your code
         into logical units, making it easier to understand, debug, and maintain. In JavaScript, you can define functions
         using the function keyword:</p>
@@ -156,8 +160,8 @@ function functionName(parameters) {
   </section>
 
   <section class="lesson-content white" id="objects-arrays">
-    <h2>Objects and Arrays</h2>
     <article>
+    <h2>Objects and Arrays</h2>
       <p>Objects and arrays are two fundamental data structures in JavaScript:</p>
       <h3>Objects:</h3>
       <p>An object is a collection of key-value pairs. Each key is a unique identifier for a property, and each value is
@@ -171,8 +175,8 @@ function functionName(parameters) {
   </section>
 
   <section class="lesson-content white" id="dom-manipulation">
-    <h2>DOM Manipulation</h2>
     <article>
+    <h2>DOM Manipulation</h2>
       <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of
         HTML and XML documents as a tree-like structure, where each node represents an element in the document.</p>
       <p>DOM manipulation refers to the process of programmatically interacting with the DOM tree to dynamically update
@@ -182,8 +186,8 @@ function functionName(parameters) {
   </section>
 
   <section class="lesson-content white" id="event-handling">
-    <h2>Event Handling</h2>
     <article>
+    <h2>Event Handling</h2>
       <p>Event handling is the process of responding to user interactions with a web page, such as clicks, mouse
         movements, keyboard input, and form submissions. In JavaScript, you can handle events by attaching event
         listeners to HTML elements and specifying the code to execute when the event occurs.</p>
